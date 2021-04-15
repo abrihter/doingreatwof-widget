@@ -43,4 +43,3 @@ Common props you may want to include:
 ## License
 
 MIT Licensed. Copyright (c) Jed Watson 2019.
-
