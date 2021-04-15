@@ -1,30 +1,46 @@
-# doingreatwof-widget
+# goingreatwof-widget
+doingreat.io Widget React component
 
-> doingreat.io Widget React component
+# Installation and usage
 
-[![NPM](https://img.shields.io/npm/v/doingreatwof-widget.svg)](https://www.npmjs.com/package/doingreatwof-widget) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+The easiest way to use goingreatwof-widget is to install it from npm and build it into your app with Webpack.
 
-## Install
-
-```bash
-npm install --save doingreatwof-widget
+```
+npm install goingreatwof-widget
 ```
 
-## Usage
+Then use it in your app:
 
-```jsx
-import React, { Component } from 'react'
+```js
+import React from 'react'
 
-import MyComponent from 'doingreatwof-widget'
-import 'doingreatwof-widget/dist/index.css'
+import DoinGreatWOF from 'doingreatwof-widget'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  return (
+    <DoinGreatWOF
+      dg_key="{your-key}"
+      dg_type="grid"
+      dg_count="6"
+      dg_rating="1"
+    />
+  )
 }
 ```
 
+## Props
+
+Required props:
+
+- `dg_key` - doingreat.io key
+
+Common props you may want to include:
+
+- `dg_type` - display type [grid, list]
+- `dg_count` - number of comments to display
+- `dg_rating` - lowest comment rating to display
+
 ## License
 
-MIT © [abrihter](https://github.com/abrihter)
+MIT Licensed. Copyright (c) Jed Watson 2019.
+
