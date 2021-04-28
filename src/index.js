@@ -6,6 +6,7 @@ const propTypes = {
   dg_type: PropTypes.string,
   dg_count: PropTypes.string,
   dg_rating: PropTypes.string,
+  dg_border_color: PropTypes.string,
 }
 
 class DoinGreatWOF extends Component {
@@ -31,9 +32,10 @@ class DoinGreatWOF extends Component {
   }
 
 	render() {
-    const {dg_key, dg_type, dg_count, dg_rating} = this.props;
+    const {dg_key, dg_type, dg_count, dg_rating, dg_border_color} = this.props;
 		return (
       <React.Fragment>
+        <style>{`.dg-testimonial-item{border-color:${dg_border_color ? dg_border_color : '#00c853'};box-shadow:5px 6px 0 ${dg_border_color ? dg_border_color : '#00c853'}}`}</style>
         <div
           id="doingreat-wof"
           doingreatkey={dg_key}
