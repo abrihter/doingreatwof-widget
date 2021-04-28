@@ -40,6 +40,7 @@ Common props you may want to include:
 - `dg_type` - display type [grid, list]
 - `dg_count` - number of comments to display
 - `dg_rating` - lowest comment rating to display
+- `dg_border_color` - border color to display for branding
 
 ## License
 
